@@ -1,34 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Treinando HTML</title>
 
-<header>
-    <img width="280" height="200" src="parceiropratodavida.jpg" alt="meu marido e eu" title="momento feliz"/>
-</header>
+    <header>
+        <img width="250" height="200" src="parceiropratodavida.jpg" alt="meu marido e eu" title="momento feliz" 
+        aria-labelledby="description-meumaridoeeu"/>
+        <p id="description-meumaridoeeu">
+            Imagem nossa sentados num barzinho comemorando o aniversário dele.     
+        </p>
+
+    </header>
 
 </head>
+
 <body>
+    <main>
 
-    <link rel="stylesheet" type="text/css" href="teste.css">
-    
+            <!--Estilização CSS-->
+            
+        <link rel="stylesheet" type="text/css" href="teste.css">
+
+            <!--Criando link-->
+
+        <a href="http://google.com" title="site do google" target="_blank">
+            Teste de link.
+        </a>
 
 
-<a href="http://google.com" title="site do google" target="_blank">
-        Teste de link.
-</a>
 
-
-
-    <p>Estamos no curso de HTML e queremos 
-        <a href="http://google.com" title="aprender mais pesquisando" target="_blank">aprender mais!</a>
+        <p>Estamos no curso de HTML e queremos
+            <a href="http://google.com" title="aprender mais pesquisando" target="_blank">aprender mais!</a>
         </p>
 
         <img width="500" height="300" src="https://poltronanerd.com.br/wp-content/uploads/2020/04/baby-yoda.jpg"
-        alt="baby yoda" title="baby yoda"/>
+            alt="baby yoda" title="baby yoda" />
 
         <h1>Exemplo de titulo teste</h1>
         <h2>Título de hoje</h2>
@@ -37,5 +47,118 @@
         </iframe>
 
         <iframe src="http://www.youtube.com/embed/aRyWiZUBhgo" width="450" height="350"></iframe>
+
+        <!--testando lista de definição-->
+
+        <dl>
+            <dt>Bootcamp</dt>
+            <dd>É um método de ensino imersivo intensivo para quem quer desenvolver suas habilidades em um curto período
+                de tempo</dd>
+            <dt>Layout</dt>
+            <dd>É o projeto desenvolvido antes da impressão de um livro, anúncio, revista, jornal ou quaisquer trabalhos
+                tipográficos.</dd>
+        </dl>
+
+        <!--lista ordenada c atributos, começará na posição 2 e c números romanos-->
+
+        <ol start="2" type="I">
+            <li>Metodologias Ágeis</li>
+            <li>Git</li>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>Lógica de Programação</li>
+        </ol>
+
+        <h1>Aula Tabela</h1>
+        <p>Realizado melhoramento no pequeno projeto dieta que
+            está <a href="https://github.com/majida-ali-abou-nouh/dieta" title="pequeno projeto" target="_blank"> no
+                repositorio.</a></p>
+
+        <!--Testando Div-->
+
+        <section>
+
+            <h1>Marvel</h1>
+            <P>É uma editora norte-americana de mídidia, considerada a maior editora em quadrinhos no mundo!</P>
+            <p>Fonte: <a href="http://pt.wikipedia.org/wiki/Marvel/_Comics" target="_blank">wikipedia</a></p>
+
+            <h2>Filmes</h2>
+
+            <p>Imagine uma imagem da Marvel</p>
+
+            <div 1>
+                <h3>Filme 1</h3>
+                <p>O Homem de Ferro</p>
+            </div>
+
+            <div 2>
+                <h3>Filme 2</h3>
+
+                <p>Homem Aranha</p>
+            </div>
+
+            <div 3>
+                <h3>Filme3</h3>
+
+                <P>Mulher Maravilha</P>
+            </div>
+
+            <div 4>
+                <h3>Filme 4</h3>
+
+                <p>Vingadores</p>
+            </div>
+
+        </section>
+
+
+        <!--TESTANDO FORMULÁRO-->
+
+
+
+        <form action="informar URL de destino dos dados informados" method="post">
+
+            <label for="1">Nome</label>
+            <input type="text" name="nome" id="campo1">
+
+            <label for="campo2">Interesses de estudo</label>
+            <select name="Interesses" id="campo2">
+                <option value="1">Tecnologia</option>
+                <option value="2">Psicologia</option>
+                <option value="3">Arquitetura</option>
+            </select>
+
+            <fieldset>
+                <legend>Interesses de estudo</legend>
+                <label for="campo31">Tecnologia</label>
+                <input type="radio" name="Interesses2" value="1" id="campo31">
+                <label for="campo 32">Psicologia</label>
+                <input type="radio" name="Interesses2" value="2" id="campo32">
+                <label for="campo33">Arquitetura</label>
+                <input type="radio" name="Interesses2" value="3" id="campo33">
+
+            </fieldset>
+
+
+            <fieldset>
+
+                <legend>Interesses de estudo2</legend>
+                <label for="campo41">Tecnologia</label>
+                <input type="checkbox" name="Interesses3" value="1" id="41">
+                <label for="campo42">Psicologia</label>
+                <input type="checkbox" name="Interesses3" value="2" id="campo42">
+                <label for="campo43">Arquitetura</label>
+                <input type="checkbox" name="Interesses3" value="3" id="campo43">
+
+            </fieldset>
+
+            <input type="submit" value="Enviar Formulário">
+
+        </form>
+
+
+    </main>
 </body>
+
 </html>
